@@ -1,0 +1,95 @@
+/********** Base styles **********/
+* {
+  box-sizing: content-box;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.container section {
+  background-color: gray;
+  position: relative;
+    margin:5px 5px 5px 5px;
+}
+.container section p {
+  padding:10px 10px 10px 10px;
+}
+section {
+  border-color: black;
+  border:1px;
+}
+section h2 {
+  position: absolute;
+  right:0;
+  top:0;
+  padding:10px 20px 10px 20px;
+  border:1px solid black;
+  margin-top:0px;
+}
+.container section p {
+  margin-top:50px;
+}
+.menu1 {
+  background-color: pink;
+  color: black;
+}
+.menu2 {
+  background-color: red;
+  color: white;
+}
+.menu3 {
+  background-color: yellow;
+  color:black;
+}
+
+/* Simple Responsive Framework. */
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .container{
+    width:100%;
+    overflow: hidden;
+  }
+  .col-lg-4 {
+    position: relative;
+    float:left;
+    border:1px solid black;
+    width: 31%;
+    margin:2%;
+
+  }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .container{
+    width:100%;
+    overflow:hidden;
+  }
+  .col-md-6 {
+    width: 48%;
+    margin:1%;
+    position: relative;
+    float:left;
+    border:1px solid black; 
+  }
+    .col-md-12 {
+    width: 97%;
+    margin:1%;
+    position: relative;
+    float:left;
+    border:1px solid black; 
+  }
+}
+
+@media (max-width:767px) {
+.container {
+    width:100%;
+    padding:20px;
+}
+
+.col-sm-12 {
+    width:95%;
+    position: relative;
+    border:1px solid black;
+    margin:30px 0px;
+}
